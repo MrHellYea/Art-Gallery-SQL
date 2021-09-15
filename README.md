@@ -1,6 +1,11 @@
 Art-Gallery-SQL
 ===================
 
+# TO DO:
+* Add semantic integrities:
+1. A piece can only have a buyer if its value is not 0
+2. A person can only visit an exposition if its enter time is at least 1 hour before its ending.
+
 **Database I made for an university exam**
 
 # Features <h1>
@@ -45,6 +50,8 @@ A piece can be literally any piece of art.
 6. **A person's CPF** as an optional string and foreign key, representing the buyer of such piece. This field is NULL if there is no owner. If the owner is removed from the database, the trigger will set this field to NULL.
 
 # Exposition <h3>
+Expositions last 6 hours.
+
 1. **A random ID** as an integer and primary key
 2. **Title** as a string 
 3. **Date** as a string
